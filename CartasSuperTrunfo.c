@@ -14,21 +14,21 @@ int main() {
     float area2;
     double pib2;
 
-    printf("Vamos jogar super trunfo!\n");
-    printf("Preciso que você insira os dados de 2 cartas, ok? Vamos lá!\n");
+    // Introdução ao jogo
+    printf("🎴 Bem-vindo ao Super Trunfo de Cidades! 🎴\n");
+    printf("Você vai cadastrar 2 cartas e tentar vencer o desafio!\n");
     printf("----------------------------------------------------------\n");
 
-    // Cadastro das cartas:
-
-    // Carta 1
-    printf("CADASTRO DA CARTA 1\n");
+    // Cadastro da carta 1
+    printf("=== CADASTRO DA CARTA 1 ===\n");
+        
+    // Cada carta terá um código único, formado pelo estado (A-H) + cidade (01-04)
     printf("Escolha um estado (A a H): ");
     scanf(" %c", &est1);
-
     printf("Escolha uma cidade (01 a 04): ");
-    scanf(" %s", cid1);
+    scanf(" %3s", cid1);
 
-    printf("Agora dê algumas informações sobre a cidade escolhida.\n");
+    printf("Vamos começar com a primeira cidade! Insira os dados abaixo:\n");
 
     printf("População: ");
     scanf(" %d", &pop1);
@@ -42,15 +42,17 @@ int main() {
     printf("Quantidade de pontos turísticos: ");
     scanf(" %d", &tur1);
 
-    // Carta 2
-    printf("CADASTRO DA CARTA 2\n");
+    printf("----------------------------------------------------------\n");
+
+    // Cadastro da carta 2
+    printf("=== CADASTRO DA CARTA 2 ===\n");
+        
     printf("Escolha um estado (A a H): ");
     scanf(" %c", &est2);
-
     printf("Escolha uma cidade (01 a 04): ");
-    scanf(" %s", cid2);
+    scanf(" %3s", cid2);
 
-    printf("Agora dê algumas informações sobre a cidade escolhida.\n");
+    printf("Agora é a vez da segunda cidade! Informe os detalhes a seguir:\n");
 
     printf("População: ");
     scanf(" %d", &pop2);
@@ -69,21 +71,21 @@ int main() {
     // Exibição dos Dados das Cartas:
 
     // Carta 1
-    printf("CARTA 1\n");
+    printf("🔹 DADOS DA CARTA 1 🔹\n");
     printf("Código: %c%s\n", est1, cid1);
     printf("População: %d\n", pop1);
     printf("Área: %.2f Km²\n", area1);
     printf("PIB: %.2f\n", pib1);
-    printf("Número de pontos turïsticos: %d\n", tur1);
+    printf("Número de pontos turísticos: %d\n", tur1);
+
+    printf("----------------------------------------------------------\n");
 
     // Carta 2
-    printf("\nCARTA 2\n");
+    printf("🔹 DADOS DA CARTA 2 🔹\n");
     printf("Código: %c%s\n", est2, cid2);
     printf("População: %d\n", pop2);
     printf("Área: %.2f Km²\n", area2);
     printf("PIB: %.2f\n", pib2);
-    printf("Número de pontos turïsticos: %d", tur2);
-
-
+    printf("Número de pontos turísticos: %d", tur2);
 
 }
