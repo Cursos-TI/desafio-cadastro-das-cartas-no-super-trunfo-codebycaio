@@ -76,7 +76,7 @@ int main() {
 
     printf("----------------------------------------------------------\n");
 
-    // Exibição dos Dados das Cartas:
+    // Exibição dos Dados das Cartas
 
     // Carta 1
     printf("🔹 DADOS DA CARTA 1 🔹\n");
