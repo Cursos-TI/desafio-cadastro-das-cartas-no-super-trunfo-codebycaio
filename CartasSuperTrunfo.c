@@ -49,8 +49,8 @@ int main() {
     printf("Quantidade de pontos turísticos: ");
     scanf(" %d", &tur1);
 
+    // Cálculos para densidade e PIB per capita
     densidade1 = (pop1 / area1);
-
     pib_percapita1 = (pib1 * 1000000000 / pop1);
 
 
@@ -81,8 +81,8 @@ int main() {
     printf("Quantidade de pontos turísticos: ");
     scanf(" %d", &tur2);
 
+    // Cálculos para densidade e PIB per capita
     densidade2 = (pop2 / area2);
-
     pib_percapita2 = (pib2 * 1000000000 / pop2);
 
     printf("----------------------------------------------------------\n");
